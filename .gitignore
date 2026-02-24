@@ -1,0 +1,26 @@
+# dependencies
+**/node_modules/
+
+# env files
+**/.env
+**/.env.*
+
+# build outputs
+**/dist/
+**/build/
+**/.next/
+
+# uploads (very important for hospital project)
+**/uploads/
+
+# logs
+*.log
+npm-debug.log*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
