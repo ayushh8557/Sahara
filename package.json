@@ -1,0 +1,11 @@
+{
+    "name": "sahara-root",
+    "version": "1.0.0",
+    "scripts": {
+        "dv": "concurrently \"npm run dev --prefix sahara-backend\" \"npm run dev --prefix sahara-frontend\"",
+        "dev": "npm run dv"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.1"
+    }
+}
