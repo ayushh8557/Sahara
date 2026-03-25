@@ -1,44 +1,147 @@
-🏥 Sahara – Secure Hospital Management System
+# 🏥 Sahara – Secure Hospital Management System
 
-Sahara is a secure, role-based hospital management web application built using PHP, MySQL, and Tailwind CSS. It aims to modernize hospital workflows by providing a digital platform for patients and doctors to interact efficiently. With real-time data updates, secure authentication, and a clean modern UI, Sahara improves the accuracy and accessibility of healthcare records by over 90%.
+## 📌 Overview
 
-🚀 Features
-🔐 Role-Based Authentication
+Sahara is a modern full-stack hospital management system designed to streamline healthcare workflows through a secure and role-based platform. Built using React, Node.js, Express, and MongoDB, it enables seamless interaction between doctors and patients while ensuring data privacy, scalability, and real-time updates.
 
-Separate login modules for patients and doctors
+The system replaces traditional manual processes with a digital solution, improving accessibility, efficiency, and accuracy in managing medical records, prescriptions, and reports.
 
-PHP session-based authentication for secure access
+---
 
-Unauthorized users are blocked from sensitive pages
+## 🚀 Features
 
-👨‍⚕️ Doctor Module
+### 🔐 Role-Based Authentication
 
-Upload prescriptions, reports, and treatment notes
+* Secure login for Doctors and Patients
+* JWT-based authentication and authorization
+* Protected routes to prevent unauthorized access
 
-Manage patient records efficiently
+### 👨‍⚕️ Doctor Module
 
-Real-time syncing to the MySQL database
+* Upload prescriptions, reports, and treatment notes
+* Manage and update patient records
+* Real-time data synchronization with database
 
-🧑‍🤝‍🧑 Patient Module
+### 🧑‍🤝‍🧑 Patient Module
 
-View medical history, prescriptions, and uploaded reports
+* View medical history and prescriptions
+* Access uploaded reports securely
+* Clean and intuitive dashboard experience
 
-Read-only access for security and data integrity
+### 🗄️ Database
 
-Clean, user-friendly dashboard
+* MongoDB-based scalable data storage
+* Efficient schema design using Mongoose
+* Real-time updates for accurate data retrieval
 
-🗄️ Database
+### 🎨 User Interface
 
-MySQL-based structured storage
+* Built with React and Tailwind CSS
+* Fully responsive (mobile + desktop)
+* Minimal, modern, and user-friendly design
 
-Real-time updates for accurate query results
+---
 
-Secure linking of medical files to patient profiles
+## 🛠️ Tech Stack
 
-🎨 User Interface
+**Frontend:** React.js, Tailwind CSS
+**Backend:** Node.js, Express.js
+**Database:** MongoDB, Mongoose
+**Authentication:** JWT (JSON Web Tokens)
 
-Fully responsive using Tailwind CSS
+---
 
-Simple, minimal, and modern visual design
+## ⚙️ Installation & Setup
 
-Optimized for both mobile and desktop
+### Prerequisites
+
+* Node.js installed
+* MongoDB (local or Atlas)
+
+### Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/ayushh8557/Sahara.git
+cd Sahara
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+```
+
+---
+
+## ▶️ Running the Application
+
+### Start Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Start Frontend
+
+```bash
+cd frontend
+npm start
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the backend folder and add:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+---
+
+## 📊 Project Structure
+
+```
+Sahara/
+│
+├── frontend/        # React frontend
+├── backend/         # Node.js backend
+├── README.md
+```
+
+---
+
+## 🌟 Key Highlights
+
+* Secure and scalable architecture
+* Role-based access control
+* Real-time data updates
+* Clean UI/UX design
+* Optimized for modern healthcare systems
+
+---
+
+## 📌 Future Improvements
+
+* Appointment booking system
+* Email/SMS notifications
+* Video consultation feature
+* Admin analytics dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Ayush Yadav**
+
+---
+
+
+This project is open-source and available under the MIT License.
